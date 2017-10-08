@@ -17,12 +17,27 @@ Egy olyan appot fogunk írni, ami lehetőség ad az egyetem hallgatóinak órare
 
 Feladat funkcionális követelményei:
 
-
+A felhasználó a teljes adatbázisban kereshet, vagy kiválaszthatja ennek egy részhalmazát.
+A rendszer biztosítja a tárolt dokumentumok megfelelő megjelenítését. 
 
 
 Feladat nem funkcionális követelményei:
 
-
+Fejlesztési módszertan:
+  - Egységesített Eljárás
+A fejlesztéshez szükséges hardver:
+  - CPU: 800MHz Intel Pentium III or equivalent, RAM: 1 GB, videó: 1024x768
+A fejlesztéshez használt szoftverek:
+  - Operációs rendszer: Windows 10
+  - Követelmény elemzés: Word szövegszerkesztővel, dokumentum-sablonok használatával
+  - CASE eszköz: www.creately.com
+  - Java fejlesztőeszköz: NetBeans
+A futtatáshoz szükséges operációs rendszer:
+  - Tetszőleges operációs rendszer, melyhez létezik JRE implementáció
+A futtatáshoz szükséges hardver:
+  - Operációs rendszerek szerint megadva
+Egyéb követelmények:
+  - Intuitív felhasználói felület, könnyű kezelhetőség
 
 
 Szakterületi fogalomjegyzék:
