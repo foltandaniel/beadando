@@ -24,7 +24,9 @@ A rendszer biztosítja a tárolt dokumentumok megfelelő megjelenítését.
 Feladat nem funkcionális követelményei:
 
 Fejlesztési módszertan:
+
   - Egységesített Eljárás.
+
 A fejlesztéshez szükséges hardver:
   - CPU: 800MHz Intel Pentium III or equivalent, RAM: 1 GB, videó: 1024x768
 A fejlesztéshez használt szoftverek:
