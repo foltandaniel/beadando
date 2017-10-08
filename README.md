@@ -15,10 +15,21 @@ Rövid feladat leírás:
 Egy olyan appot fogunk írni, ami lehetőség ad az egyetem hallgatóinak órarend készítésére, illetve a tantermek megtekintésére, hogy azok mikor foglaltak, hol milyen órát tartanak adott időben, illetve ha sikerül megvalósítani, akkor kirajzolja grafikus felületen az utat az aktuális pozíció és a keresett terem között.
 
 
-Feladat funkcionális követelményei:
+Feladat funkcionális követelményei: (Minden elindítás elött a legfrissebb adatbazissal dolgozik.)
 
-A felhasználó a teljes adatbázisban kereshet, vagy kiválaszthatja ennek egy részhalmazát.
-A rendszer biztosítja a tárolt dokumentumok megfelelő megjelenítését. 
+  - Felhasználóként szeretnék tudni regisztrálni az oldalra.
+  - Felhasználóként szeretnék tudni bejelentkezni az oldalra.
+  - Felhasználóként szeretném tudni a profiladataimat szerkeszteni.
+  - Felhasználóként szeretnék új órákat felvenni.
+  - Felhasználóként szeretnék termeket és órákat kedvencek közé adni.
+  - Felhasználóként szeretnék termekre, órákra keresni, szűrni.
+  - Felhasználóként szeretnék útvonalat tervezni  adott teremhez.
+  - Felhasználóként szeretném termeket foglaltság szerint látni.
+  - Felhasználóként szeretném a saját órarendemet módosítani vagy törölni.
+  - Felhasználóként szeretnék más felhasználóval csevegni és problémát jelenteni.
+  - Felhasználóként szeretnék egy terem, óra leírást megtekinteni.
+  - Felhasználóként szeretnék a termek, órák között és térképen szabadon böngészni.
+  - Felhasználóként szeretnék mozgássérült útvonalat tervezni.
 
 
 Feladat nem funkcionális követelményei:
@@ -53,7 +64,8 @@ Egyéb követelmények:
 
 Szakterületi fogalomjegyzék:
 
-
+  - terem: ELTE IK Déli tömb termei
+  - óra: Neptunban meghírdetett órák 
 
 Szerepkörök:
 
