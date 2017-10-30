@@ -2,7 +2,7 @@ Alkalmazások Fejelsztése Beadandó
 Fejlesztői specifikáció
 
 Készítette: Foltán Dániel (github.com/foltandaniel), Albirt Mátyás (github.com/amatyi96), Bárkányi Dominik (github.com/barkanyidominik)
- 
+
 Tartalomjegyzék
 0.  Rövid feladat leírás
 1.	Feladat funkcionális követelményei
