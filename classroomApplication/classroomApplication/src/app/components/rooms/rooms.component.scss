@@ -1,0 +1,19 @@
+mat-grid-tile {
+  text-align: center;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+}
+
+.active {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.active:hover {
+  cursor: pointer;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}

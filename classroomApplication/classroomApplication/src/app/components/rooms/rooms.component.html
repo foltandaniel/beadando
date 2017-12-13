@@ -1,0 +1,11 @@
+<mat-grid-list cols="32">
+  <mat-grid-tile
+    *ngFor="let tile of tiles"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+    [style.background]="reservedRooms.indexOf(tile.id) !== -1 ? RESERVED : tile.color"
+    [class.active]="tile.id !== -1"
+    [routerLink]="tile.link">
+    {{tile.text}}
+    </mat-grid-tile>
+</mat-grid-list>
