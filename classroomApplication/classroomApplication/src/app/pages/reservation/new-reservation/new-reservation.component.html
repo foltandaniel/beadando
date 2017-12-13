@@ -1,0 +1,22 @@
+<div class="page-body">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title><h1 class="mat-h1">{{room.name}}</h1></mat-card-title>
+      <mat-card-subtitle><h2 class="mat-h2" [style.color] = "room.status === 'FREE' ? '#8bc34a' : '#f44336'">{{room.status}}</h2></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <h3 class="mat-h2">{{date |date : 'medium'}}</h3>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-form-field>
+        <mat-select placeholder="Interval" (change)="updateStatus($event)" [(ngModel)]="interval">
+          <mat-option *ngFor="let interval of intervals" [value]="interval">
+            {{ interval }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button class="mat-accent" (click)="create()" [disabled]="!(room.status === 'FREE')">Create</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
