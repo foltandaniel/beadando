@@ -2,10 +2,12 @@ package hu.elte.alkfejl.classroomApplication.controller;
 
 import hu.elte.alkfejl.classroomApplication.model.User;
 import hu.elte.alkfejl.classroomApplication.service.UserService;
+import hu.elte.alkfejl.classroomApplication.service.exceptions.UserIsExistException;
+import hu.elte.alkfejl.classroomApplication.service.exceptions.UserNotValidException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
@@ -44,9 +46,15 @@ public class UserController {
 
     @PostMapping("/register")
     public String register(@ModelAttribute User user) {
-        userService.register(user);
-        return redirectToGreeting(user);
+        try {
+            userService.register(user);
+            return redirectToGreeting(user);
+        } catch (UserIsExistException e){
+            return "A felhasznalo mar letezik.";
+        }
     }
+
+
 
     private String redirectToGreeting(@ModelAttribute User user) {
         return "redirect:/user/greet?name=" + user.getUsername();
