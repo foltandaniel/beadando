@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "RESERVATIONS")
@@ -15,7 +16,17 @@ import javax.persistence.*;
 @EqualsAndHashCode
 public class Reservation extends BaseEntity {
 
-    private String roomId;
+    @JoinColumn
+    @ManyToOne(targetEntity = Room.class)
+    private Room room;
 
-    private String timeInterval;
+    private Day day;
+
+    private Date startTime;
+
+    private Date endTime;
+
+    public enum Day {
+        VASARNAP, HETFO, KEDD, SZERDA, CSUTORTOK, PENTEK, SZOMBAT;
+    }
 }

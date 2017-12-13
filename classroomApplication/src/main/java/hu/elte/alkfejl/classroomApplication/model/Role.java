@@ -17,7 +17,7 @@ import javax.persistence.*;
 public class Role {
 
     @Id
-    private String userId;
+    private int userId;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, unique = true)
