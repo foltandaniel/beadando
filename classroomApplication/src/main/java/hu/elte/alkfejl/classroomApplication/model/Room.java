@@ -12,15 +12,13 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode(callSuper = true)
 public class Room extends BaseEntity{
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @OneToMany(fetch = FetchType.LAZY)
-    @JoinColumn(name = "RESERVATION.ROOM_ID")
-    private String id;
 
     @Column(nullable = false, unique = true)
     private String name;
+
+    public enum RoomStatus {
+        RESERVED, FREE
+    }
 }

@@ -6,23 +6,28 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "USER_RESERVATIONS")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = true)
 public class UserReservation extends BaseEntity {
 
-    private String userId;
+    @JoinColumn
+    @ManyToOne(targetEntity = User.class)
+    private User user;
 
-    private String roomId;
+    @JoinColumn
+    @ManyToOne(targetEntity = Room.class)
+    private Room room;
 
-    private String timeInterval;
+    private Date startTime;
+
+    private Date endTime;
 
 }
 

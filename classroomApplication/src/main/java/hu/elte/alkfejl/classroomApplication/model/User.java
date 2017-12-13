@@ -24,11 +24,11 @@ public class User extends BaseEntity {
     @Column(nullable = false)
     private String password;
 
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, unique = true)
     private Role role;
 
-    private enum Role {
+    public enum Role {
         GUEST, USER, ADMIN
     }
 }
